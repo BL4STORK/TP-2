@@ -11,6 +11,6 @@ char activite(int activity){
     }
 }
 
-float monthsalary(float revenu_annuel){
-    return revenu_annuel/12;
+float monthsalary(float revenuan){
+    return revenuan/12;
 }
