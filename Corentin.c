@@ -1,27 +1,12 @@
 #include <stdio.h>
 
-double calculerTaxe(double revenuAnnuel) {
-    double taxe;
-
-    if (revenuAnnuel > 50000) {
-
-        taxe = revenuAnnuel * 0.50;
-    } else if (revenuAnnuel > 15000) {
-
-        taxe = revenuAnnuel * 0.30;
-    } else {
-
-        taxe = revenuAnnuel * 0.10;
-    }
-
-
-    return taxe;
+double calcultaxe(float revenus) {
+    if (revenus >= 15000 && revenus < 50000) {
+        return revenus * 1.3 - revenus ;
+    } else if (revenus >= 50000) {
+        return revenus * 1.5- revenus;
+    } else{
+        return revenus * 1.1- revenus; }
 }
-
-
-double calculage(double birthyear){
-        double ageuser;
-        ageuser = 2023 - birthyear;
-
-        return ageuser;
-}
+int calculage(int years) {
+    return 2023 - years; }

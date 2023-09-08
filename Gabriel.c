@@ -1,19 +1,16 @@
-//
-// Created by gabriel.de-brito on 07/09/2023.
-//
 #include <stdio.h>
 
-char codefiscal(int activite) {
-    if (activite == 5){
-        activite = 'B';
-    }else if(activite == 2){
-        activite = 'C';
+char activite(int activity){
+
+    if (activity == 5){
+        return 'B';
+    }else if (activity == 2){
+        return 'C';
     }else{
-        activite = 'A';
+        return 'A';
     }
-    return activite;
 }
 
-float revenumensuel (float revenuannuel){
-    return revenuannuel / 12;
+float monthsalary(float revenu_annuel){
+    return revenu_annuel/12;
 }
